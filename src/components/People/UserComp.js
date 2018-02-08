@@ -3,7 +3,6 @@ import styled  from 'styled-components';
 import BtnConnect from '../Connections/BtnConnectComp';
 
 const User = styled.div`
-
     width: 184px;
     float:left;
     border: 1px solid #CDCFD2;
@@ -59,26 +58,18 @@ const User = styled.div`
         margin-right:3px;
         padding-bottom:4px;
     }
-    
-
-
 `;
-
-
-
 
 class UserComp extends React.Component {
 
       render() {
             return (
                 <User>
-
                     <img src={this.props.dUser.image} alt={this.props.dUser.name} />
 
                     <div className="name">{this.props.dUser.name}</div>
                     
                     <div className="career">{this.props.dUser.carrer}</div>
-                    
                     
                     <div className="relConnection">
                        <img src="./images/aro-icon.png" className="aro-icon" alt="aro-icon"/> 
@@ -86,8 +77,6 @@ class UserComp extends React.Component {
                     </div>
                     
                     <BtnConnect copy="Connect" size="75" ></BtnConnect>
-                    
-
                 </User>
       );}
       
