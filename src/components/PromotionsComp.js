@@ -16,7 +16,7 @@ class Promotions extends React.Component {
       render() {
             return (
                 <Promo>
-                  <a hrf="#"><img src="./images/promotion.png" alt="img" /></a>
+                  <a href="#"><img src="./images/promotion.png" alt="img" /></a>
                 </Promo>
       );}
       
