@@ -6,30 +6,30 @@ const ConnectionBox = styled.div`
 
     padding-top:30px;
     
-    .number {
-      color:#3795C6;
-      font-size: 32px;
-      font-weight:200;
-    }
-    
-    .title {
-      line-height: 20px;
-      color: black;
-      font-size: 16px;
-      font-weight:bold;
-    }
-    
-    .link {
-      padding-top: 5px;
-      padding-bottom: 20px;
-      color: #0084bf;
-    }
-    
-    .link:hover {
-      color: #0084bf;
-      text-decoration:underline;
-      cursor: pointer;
-    }
+        .number {
+          color:#3795C6;
+          font-size: 32px;
+          font-weight:200;
+        }
+
+        .title {
+          line-height: 20px;
+          color: black;
+          font-size: 16px;
+          font-weight:bold;
+        }
+
+        .link {
+          padding-top: 5px;
+          padding-bottom: 20px;
+          color: #0084bf;
+        }
+
+        .link:hover {
+          color: #0084bf;
+          text-decoration:underline;
+          cursor: pointer;
+        }
 
 `;
 
