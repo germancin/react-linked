@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './App.css';
-
 import styled  from 'styled-components';
 import Connections from './components/Connections/ConnectionsComp';
 import ConnectOpt from './components/Connections/ConnectOpt';
@@ -12,7 +10,6 @@ const AppContainer = styled.div`
     font-size: 14px;
     text-align: center;
     color: #E2E2E2;
-    border: 1px solid black;
     border-spacing: 0;
     background-color:#F5F5F5;
     height:100%;
@@ -26,8 +23,7 @@ const Header = styled.div`
     height: 40px;
     padding: 15px 0px 10px 0px;
     color: white;
-    font-size:18px
-    
+    font-size:18px;
 `;
 
 const Container = styled.div`
@@ -59,9 +55,7 @@ const LeftBox = styled.div`
         padding-top:15px;
         padding-left:15px;
         padding-right:15px;
-        
     }
-
 `;
 
 const ContentBox = styled.div`
@@ -79,34 +73,28 @@ const RightBox = styled.div`
     height: 255px;
 `;
 
-
 class App extends Component {
   render() {
     return (
       <AppContainer>
-        <Header>
-          
-        </Header>
-        
-        <Container>
+        <Header></Header>
 
+        <Container>
             <LeftBox  className="box-style">
                 <Connections></Connections>
                 <LeftBox  className="box-style inner">
                     <ConnectOpt></ConnectOpt>
                 </LeftBox>
             </LeftBox>
-            
+
             <ContentBox className="box-style">
                 <People></People> 
             </ContentBox>
-            
+
             <RightBox className="box-style">
                 <Promotions></Promotions> 
             </RightBox>
-
         </Container>
-        
       </AppContainer>
     );
   }
