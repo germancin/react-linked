@@ -1,7 +1,6 @@
 import React from 'react';
 import styled  from 'styled-components';
 
-
 const ImageConn = styled.div`
 
     display: flex;
@@ -22,35 +21,35 @@ const ImageConn = styled.div`
 class ImagesConnect extends React.Component {
     
       state = {
-        images: [
-          {
-            id: 1,
-            url: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?h=350&auto=compress&cs=tinysrgb',
-          },
-          {
-            id: 2,
-            url: 'https://images.pexels.com/photos/713312/pexels-photo-713312.jpeg?h=350&auto=compress&cs=tinysrgb',
-          },
-          {
-            id: 3,
-            url: 'https://images.pexels.com/photos/289225/pexels-photo-289225.jpeg?h=350&auto=compress&cs=tinysrgb',
-          },
-          {
-            id:4,
-            url: 'https://images.pexels.com/photos/459947/pexels-photo-459947.jpeg?h=350&auto=compress&cs=tinysrgb',
-          },
-          
-        ],
+            images: [
+              {
+                id: 1,
+                url: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?h=350&auto=compress&cs=tinysrgb',
+              },
+              {
+                id: 2,
+                url: 'https://images.pexels.com/photos/713312/pexels-photo-713312.jpeg?h=350&auto=compress&cs=tinysrgb',
+              },
+              {
+                id: 3,
+                url: 'https://images.pexels.com/photos/289225/pexels-photo-289225.jpeg?h=350&auto=compress&cs=tinysrgb',
+              },
+              {
+                id:4,
+                url: 'https://images.pexels.com/photos/459947/pexels-photo-459947.jpeg?h=350&auto=compress&cs=tinysrgb',
+              },
+
+            ],
       };
     
-    render() {
-        return (
-            <ImageConn>
-                    {this.state.images.map((img) => {
-                        return <img  src={img.url} key={img.id} alt="name"  />
-                    })}
-            </ImageConn>
-    )}
+        render() {
+            return (
+                <ImageConn>
+                        {this.state.images.map((img) => {
+                            return <img  src={img.url} key={img.id} alt="name"  />
+                        })}
+                </ImageConn>
+        )}
       
 }
 
